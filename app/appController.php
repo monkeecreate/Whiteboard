@@ -44,7 +44,7 @@ class appController {
 		return $oModel;
 	}
 	
-	public function loadTemplate($sTemplate) {
+	public function loadView($sTemplate) {
 		if(is_file($this->root."app/views/".$sTemplate)) {
 			include($this->root."app/views/".$sTemplate);
 		} else {
