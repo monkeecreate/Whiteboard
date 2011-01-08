@@ -1,6 +1,6 @@
 <?php
 $sPage = "home";
-$this->loadTemplate("inc_header.php");
+$this->loadView("inc_header.php");
 ?>
 	
 	<h2>HTML Ipsum Presents</h2>
@@ -41,4 +41,4 @@ $this->loadTemplate("inc_header.php");
 		</code>
 	</pre>
 
-<?php $this->loadTemplate("inc_footer.php"); ?>
+<?php $this->loadView("inc_footer.php"); ?>

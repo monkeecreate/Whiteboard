@@ -69,13 +69,13 @@ if(is_file($sSiteRoot."app/controllers/".$sController.".php")) {
 			$oController->$sAction($aURL);
 		} else {
 			$oApp = new appController;
-		$oApp->loadTemplate("error/404.php");
+		$oApp->loadView("error/404.php");
 		}
 	} else {
 		$oApp = new appController;
-		$oApp->loadTemplate("error/404.php");
+		$oApp->loadView("error/404.php");
 	}
 } else {
 	$oApp = new appController;
-	$oApp->loadTemplate("error/404.php");
+	$oApp->loadView("error/404.php");
 }
