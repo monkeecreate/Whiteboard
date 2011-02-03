@@ -18,14 +18,12 @@
 	
 	<link rel="shortcut icon" href="/images/favicon.ico">
 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<link rel="stylesheet" href="/css/screen.css?v=1" type="text/css">
+	<link rel="stylesheet" href="/css/style.css?v=1" type="text/css">
 	
-	<script src="/scripts/modernizr-1.5.min.js"></script>
+	<script src="/scripts/modernizr-1.6.min.js"></script>
 </head>
 <body class="<?php echo $sPage; ?>">
 	<div id="wrapper">
 		<header>
-			<h1><a href="/" title="">Whiteboard</a></h1>
+			<h1>Whiteboard</h1>
 		</header>
-		
-		<section id="content" class="content">

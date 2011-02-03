@@ -26,8 +26,7 @@ $sURL = array_shift(explode("?", $_SERVER["REQUEST_URI"]));
 $sURL = array_shift(explode("?", $_SERVER["REQUEST_URI"]));
 
 // Force ending slash
-if(substr($sURL, -1) != "/" && substr($sURL,-4,1) != "." && substr($sURL,-3,1) != ".")
-{
+if(substr($sURL, -1) != "/" && substr($sURL,-4,1) != "." && substr($sURL,-3,1) != ".") {
 	// Save _GET parameters
 	if(!empty($_SERVER["QUERY_STRING"]))
 		$sQueryString .= "?".$_SERVER["QUERY_STRING"];

@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand);
+
 /* @group reset */
 
 html, body, div, span, object, iframe,
@@ -55,7 +57,7 @@ input, select { vertical-align:middle; }
 /* @group structure */
 
 html, body {
-	background: #fff url(../images/12_col.gif) repeat-y fixed top center;
+	background: #f6f6f6 url(../images/whiteBoard.jpg) no-repeat top center;
 }
 
 body {
@@ -73,7 +75,6 @@ header, article, section, aside, footer {
 	margin: 0 auto;
 	padding: 0;
 	text-align: left;
-	overflow: hidden;
 }
 
 /* @end */
@@ -84,6 +85,11 @@ header {
 	width: 100%;
 	height: px;
 	margin: 35px 0;
+}
+
+header h1 {
+	font: 10.0em 'Just Another Hand', arial, serif;
+	color: #4e4d4d;
 }
 
 header h1 a:link, header h1 a:active, header h1 a:visited {
@@ -144,258 +150,49 @@ nav ul li a:hover {
 
 /* @end */
 
-/* @group content */
+/* @group Columns */
 
-#content {
+#columns {
+	clear: both;
+}
+
+.columns {
+	width: 205px;
 	float: left;
-	display: inline;
-	width: 620px;
-	color: #;
-	margin-left: 10px;
+	margin: 0 0 0 35px;
 }
 
-.content a:link, .content a:visited, .content a:active {
-	color: #;
-	text-decoration: none;
+.columns:first-child {
+	margin-left: 0;
 }
 
-.content a:focus {
-	outline: thin dotted;
-}
-
-.content a:hover {
-	color: #;
-	text-decoration: underline;
-}
-
-.content h2 {
+.columns h2 {
+	font: 2.5em Arial, sans-serif;
+	color: #333;
+	border-bottom: 1px solid #ddd;
 	margin: 0 0 15px;
-	font-size: 3.5em;
-	color: #;
 }
 
-.content h3 {
-	margin: 25px 0 15px;
-	font-size: 3.0em;
-	font-weight: bold;
-	color: #;
+.columns ul {
+	list-style: none;
+	font: normal 2.0em 'Helvetica', arial, serif;
+	min-height: 100px;
 }
 
-.content h4 {
-	margin: 25px 0 15px;
-	font-size: 2.6em;
-	font-weight: bold;
-	color: #;
+.columns ul li {
+	margin: 0 0 10px;
 }
 
-.content h5 {
-	margin: 25px 0 15px;
-	font-size: 2.1em;
-	font-weight: bold;
-	color: #;
-}
-
-.content h6 {
-	margin: 25px 0 15px;
-	font-size: 1.7em;
-	font-weight: bold;
-	color: #;
-}
-
-.content p, .content blockquote {
-	margin-bottom: 20px;
-	font-size: 1.3em;
-	line-height: 1.4em;
-}
-
-.content p a:link, .content p a:visited, .content p a:active, .content li a:link, .content li a:visited, .content li a:active {
-	color: #;
-	text-decoration: none;
-	border-bottom: 1px solid #;
-}
-
-.content p a:hover, .content li a:hover {
-	color: #;
-	border-bottom: 1px solid #;
-}
-
-.content ul {
-	margin: 0 0 15px 30px;
-}
-
-.content ul li {
-	list-style-type: square;
-}
-
-.content ol {
-	margin: 0 0 15px 30px;
-	list-style-type: decimal;
-}
-
-.content ol li {
-	list-style-type: decimal;
-}
-
-.content li {
-	margin-bottom: 5px;
-	font-size: 1.3em;
-	line-height: 1.4em;
-}
-
-.content li li {
-	font-size: 1em;
-}
-
-/* @end */
-
-/* @group sidebar */
-
-aside {
-	float: right;
-	display: inline;
-	width: 300px;
-	font-size: .95em;
-	color: #;
-	margin-right: 10px;
-}
-
-aside a:link, aside a:visited, aside a:active {
-	color: #;
-	text-decoration: none;
-	border-bottom: 1px solid #;
-}
-
-aside a:focus {
-	outline: thin dotted;
-}
-
-aside a:hover {
-	color: #;
-	border-bottom: 1px solid #;
-}
-
-aside h2 {
-	margin-bottom: 1em;
-	font-size: 1.8em;
-	color: #;
-}
-
-aside h3 {
-	margin-bottom: 1em;
-	font-size: 1.5em;
-	font-weight: bold;
-	color: #;
-}
-
-aside h4 {
-	margin-bottom: 1em;
-	font-size: 1.4em;
-	font-weight: bold;
-	color: #;
-}
-
-aside h5 {
-	margin-bottom: 1em;
-	font-size: 1.3em;
-	font-weight: bold;
-	color: #;
-}
-
-aside h6 {
-	margin-bottom: 1em;
-	font-size: 1.2em;
-	font-weight: bold;
-	color: #;
-}
-
-aside p, aside blockquote {
-	margin-bottom: 1.8em;
-	font-size: 1.3em;
-	line-height: 1.4em;
-}
-
-aside p a:link, aside p a:visited, aside p a:active, aside li a:link, aside li a:visited, aside li a:active {
-	color: #;
-	text-decoration: none;
-	border-bottom: 1px solid #;
-}
-
-aside p a:hover, aside li a:hover {
-	color: #;
-	border-bottom: 1px solid #;
-}
-
-aside ul {
-	margin: 0 0 15px 30px;
-}
-
-aside ul li {
-	list-style-type: square;
-}
-
-aside ol {
-	margin: 0 0 15px 30px;
-	list-style-type: decimal;
-}
-
-aside ol li {
-	list-style-type: decimal;
-}
-
-aside li {
-	margin-bottom: 5px;
-	font-size: 1.3em;
-	line-height: 1.4em;
-}
-
-/* @end */
-
-/* @group forms */
-
-label, input[type=button], input[type=submit], button {
-	cursor: pointer;
-}
-
-input[type="radio"] {
-	vertical-align: text-bottom;
-}
-
-input[type="checkbox"] {
-	vertical-align: bottom;
-}
-
-.ie7 input[type="checkbox"] {
-	vertical-align: baseline;
+.item-highlight {
+	background: #ddd;
+	height: 35px;
 }
 
 /* @end */
 
 /* @group footer */
 
-footer {
-	clear: both;
-	float: left;
-	display: inline;
-	margin: 25px 10px;
-}
 
-footer p {
-	color: #666;
-}
-
-footer a:link, footer a:visited, footer a:active {
-	color: #;
-	text-decoration: none;
-}
-
-footer a:focus {
-	outline: thin dotted;
-}
-
-footer a:hover {
-	color: #;
-	text-decoration: underline;
-}
 
 /* @end */
 
