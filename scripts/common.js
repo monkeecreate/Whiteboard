@@ -1,6 +1,5 @@
 $(function() {		
 	$(".columns ul").sortable({
-		cursorAt: 'top',
 		handle: '.move',
 		placeholder: "item-highlight",
 		connectWith: ".columns ul",
