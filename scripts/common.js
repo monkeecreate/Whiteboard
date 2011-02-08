@@ -16,10 +16,10 @@ function activateColumns() {
 		}
 	}).disableSelection();
 	
-	$(".columns ul").draggable({
-		helper: 'clone',
-		cursor: 'move'
-	});
+	// $(".columns ul").draggable({
+	// 	helper: 'clone',
+	// 	cursor: 'move'
+	// });
 	
 	$("#delete").droppable({
 		tolerance: 'touch',
