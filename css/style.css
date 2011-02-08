@@ -206,6 +206,10 @@ nav ul li a:hover {
 	padding: 5px 5px 5px 27px;
 	overflow: hidden;
 	white-space: nowrap;
+	cursor:default;
+}
+
+.columns ul li span {
 	cursor:pointer;
 	cursor:hand;
 }
@@ -234,6 +238,15 @@ nav ul li a:hover {
 .item-highlight {
 	background: #ddd;
 	height: 35px;
+}
+
+/* @end */
+
+/* @group Loader */
+
+#loader {
+	font-size: 2.0em;
+	text-align: center;
 }
 
 /* @end */
