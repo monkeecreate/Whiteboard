@@ -16,10 +16,10 @@ function activateColumns() {
 		}
 	}).disableSelection();
 	
-	// $(".columns ul li").draggable({
-	// 	helper: 'clone',
-	// 	cursor: 'move'
-	// });
+	$(".columns ul").draggable({
+		helper: 'clone',
+		cursor: 'move'
+	});
 	
 	$("#delete").droppable({
 		tolerance: 'touch',
@@ -30,7 +30,6 @@ function activateColumns() {
 			console.log("Out");
 		},
 		drop: function(event, ui) {
-			$(".columns ul").sortable('cancel');
 			$(ui.draggable).remove();
 			console.log("Delete project.");
 		}
