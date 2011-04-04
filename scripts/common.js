@@ -23,12 +23,6 @@ function activateColumns() {
 	
 	$("#delete").droppable({
 		tolerance: 'touch',
-		over: function() {
-			console.log("Over");
-		},
-		out: function() {
-			console.log("Out");
-		},
 		drop: function(event, ui) {
 			$(ui.draggable).remove();
 			console.log("Delete project.");

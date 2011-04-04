@@ -221,7 +221,6 @@ nav ul li a:hover {
 }
 
 .columns ul li:hover {
-	overflow: visible;
 	padding-left: 5px;
 	background: #F2F2F2; /* old browsers */
 	background: -moz-linear-gradient(top, #F2F2F2 0%, #E0E0E0 100%); /* firefox */
